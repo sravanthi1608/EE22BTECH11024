@@ -113,7 +113,7 @@
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 %\renewcommand{\theequation}{\theenumi}
-Question:The probability that at least one of the events A and B occurs is 0.6. If A and B occur simultaneously with probability 0.2, then $P ( \overline A )+P (\overline B) $ is\\
+Question:The probability that at least one of the events A and B occurs is 0.6. If A and B occur simultaneously with probability 0.2, then $P (A')+P (B') $ is\\
 (A) 0.4\\
 (B) 0.8\\
 (C) 1.2\\
@@ -128,20 +128,21 @@ Given,
 \hline
 Parameters & values & Description\\
 \hline
-{}& 0 & Probability of A\\
-$X_i$ & 1 & Probability of B\\
+{}& 0 & A\\
+$X_i$ & 1 &  B\\
 \hline
-$p(0+1)$&0.6&Probability that atleast one of the events occur\\
+$p(X=0,X=1)$&0.6&Probability that atleast one of the events occur\\
 \hline
-$p(0-1)$&0.2&Probability that A and B occur simultaneously\\
+$p(X=0.X=1)$&0.2&Probability that A and B occur simultaneously\\
 \hline
 \end{tabular}
 \end{center}
 \end{table}
 \begin{align}
-\therefore P(0+1)=P(0)+P(1)-p(0-1)\\
+\therefore 
+P(X=0+X=1)=P(0)+P(1)-p(X=0.X=1)\\
 P(0)+P(1)=0.8\\
-1 - P ( \overline 0 )+1 - P (\overline 1)=0.8\\
-\therefore P ( \overline 0 )+P (\overline 1)=1.2
+1 - P (0')+1 - P (1')=0.8\\
+\therefore P ( 0 )+P (1')=1.2
 \end{align}
 \end{document}
